@@ -91,7 +91,8 @@
 #    if defined(_MSC_EXTENSIONS) && ! defined(__BEOS__) && ! defined(__CYGWIN__)
 #      define XMLIMPORT __declspec(dllimport)
 #    endif
-
+#  else
+#      define XMLIMPORT __declspec(dllexport)
 #  endif
 #endif /* not defined XML_STATIC */
 
